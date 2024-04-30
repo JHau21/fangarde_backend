@@ -1,0 +1,56 @@
+{
+	"name": "fangarde-node-app",
+	"version": "1.0.0",
+	"description": "This is our repository for modifying our node application. It will include our important scripts for seeking blockchain information and will interface with database, frontend, and blockchain, as well as make API calls. We are keeping this separate from the web application repository to avoid confusion.",
+	"main": "./server/app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "cp deployment/.env.dev .env && nodemon server/app.js",
+		"staging": "cp deployment/.env.staging .env && node server/app.js",
+		"prod": "cp deployment/.env.production .env && node server/app.js",
+		"format": "prettier --write \"src/**/*.js\""
+	},
+	"engines": {
+		"node": "19.x",
+		"npm": "9.x"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Fangarde/fangarde_node_backend.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Fangarde/fangarde_node_backend/issues"
+	},
+	"homepage": "https://github.com/Fangarde/fangarde_node_backend#readme",
+	"dependencies": {
+		"@babel/cli": "^7.22.5",
+		"@babel/core": "^7.22.5",
+		"@babel/preset-env": "^7.22.5",
+		"@babel/preset-react": "^7.22.5",
+		"@babel/register": "^7.22.5",
+		"@cityofzion/neon-js": "^5.3.0",
+		"@react-pdf/renderer": "^3.1.12",
+		"axios": "^1.3.6",
+		"bcrypt": "^5.1.0",
+		"body-parser": "^1.20.1",
+		"dotenv": "^16.0.3",
+		"exceljs": "^4.3.0",
+		"express": "^4.18.2",
+		"firebase-admin": "^11.8.0",
+		"jsonwebtoken": "^9.0.0",
+		"mongoose": "^6.9.1",
+		"nodemon": "^2.0.20",
+		"pdfkit": "^0.13.0",
+		"postmark": "^3.0.15",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"stripe": "^11.13.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.13.0",
+		"prettier": "^2.8.8"
+	}
+}
