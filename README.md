@@ -1,7 +1,7 @@
 # Fangarde Backend (Public Version)
 
 ## Introduction
-This repository contains all of the code for the backend of Fangarde's flagship product. The company is no longer operating and my myself, in addition to the other founders, have agreed to allow this code to be shared.
+This repository contains all of the code for the backend of Fangarde's flagship product. The company is no longer operating and the other founders and I have agreed to allow this code to be shared.
 
 ## Preface
 There are a few things to keep in mind when looking through this codebase.
